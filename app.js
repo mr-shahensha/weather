@@ -13,12 +13,16 @@ buton.addEventListener('click',function(){
 .then(data =>{
     console.log(data)
     var nameValue = data['name'];
-    var tempValue = data['main']['tamp'];
+    var temper=data['main']['temp']
     var descValue =data['weather'][0]['description'];
 
     desc.innerText=descValue;
     city.innerText=nameValue;
-    temp.innerHTML=tempValue;
+    temp.innerText=temper;
+    temper=temper-273;
+        temper=temper.toFixed(2);
+        temper=temper+"ºC";
+        temp.innerText=temper;
   
 })
 
