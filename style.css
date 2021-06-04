@@ -56,6 +56,33 @@ input[type="submit"]:active{
     font-family: "Nunito",sans-serif;
 }
 
+.nm{
+    color: chartreuse;
+}
+.developer{
+    position: absolute;
+    right: 5px;
+    left: 5px;
+    font-size: 30px;
+    bottom: 0;
+    color: wheat;
+   text-shadow: black 2px 1px 2px;
+    padding-left: 6px;
+    font-family: 'Goblin One', cursive;
+    font-weight: 700;
+}
+
+@media  screen and (max-width:650px) {
+
+    .developer{
+       
+        font-size: 10px;
+       bottom: 5%;
+      
+    }
+    
+}
+
 
 
 
